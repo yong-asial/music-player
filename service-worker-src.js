@@ -1,4 +1,4 @@
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js');
+importScripts('workbox-sw.js');
 
 workbox.skipWaiting();
 workbox.clientsClaim();
@@ -56,4 +56,19 @@ workbox.routing.registerRoute(
   })
 );
   
+// 4. font
+workbox.routing.registerRoute(
+    new RegExp('\.(woff|woff2|ttf|jpeg)$'),
+    workbox.strategies.cacheFirst({
+        cacheName: 'My-awesome-cache-font',
+        plugins: [
+            new workbox.expiration.Plugin({
+                maxAgeSeconds: 60 * 60 * 24 * 7,
+                maxEntries: 50,
+                purgeOnQuotaError: true
+            })
+        ]
+    })
+  );
+
 workbox.precaching.precacheAndRoute([]);
