@@ -36,7 +36,7 @@ body {
 .img-container img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: fill;
   border-radius: 20px;
   box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.5);
 }
@@ -107,14 +107,18 @@ h3 {
 }
 
 /* Media Query: iPhone (Vertical) */
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 500px) {
 
   .player-container {
     width: 95vw;
+    height: 90vh;
   }
 
   .img-container {
-    left: 29px;
+    left: 10px;
+    margin-top: 20px;
+    height: 60vh;
+    width: 90vw;
   }
 
   h2 {
@@ -127,6 +131,6 @@ h3 {
 
   .player-controls {
     top: -10px;
-    left: 100px;
+    left: 120px;
   }
 }
