@@ -19,20 +19,70 @@ let songIndex = 0;
 // Music
 const songs = [
   {
-    name: 'jacinto-1',
-    displayName: 'Electric Chill Machine',
-    artist: 'Jacinto Design'
+    name: "123 Don't Cry  - Pipo",
+    displayName: "123 Don't Cry",
+    artist: 'Pipo'
   },
   {
-    name: 'jacinto-2',
-    displayName: 'Seven Nation Army',
-    artist: 'Jacinto Design'
+    name: 'Bun Phum - Khmeng Khmer',
+    displayName: ' Bun Phum',
+    artist: 'Khmer Khmer'
   },
   {
-    name: 'jacinto-3',
-    displayName: 'Song 3',
-    artist: 'Jacinto Design'
-  }
+    name: 'kado kmean ney',
+    displayName: 'kado kmean ney',
+    artist: 'Moun Mara'
+  },
+  {
+    name: 'Khos Chum Nann - Tena',
+    displayName: 'Khos Chum Nann',
+    artist: 'Tena'
+  },
+  {
+    name: 'Kong SaKur - Tena',
+    displayName: 'Kong SaKur',
+    artist: 'Tena'
+  },
+  {
+    name: 'Kromom 3 - Vuthea ft MC JR',
+    displayName: ' Kromom 3',
+    artist: 'Vuthea ft MC JR'
+  },
+  {
+    name: 'mean nek thea re nov',
+    displayName: 'mean nek thea re nov',
+    artist: 'Adda'
+  },
+  {
+    name: 'mek kom pong pleang huey - Hak Record',
+    displayName: 'mek kom pong pleang huey',
+    artist: 'Hak Record'
+  },
+  {
+    name: 'Min srolanh oun min ban - Chan samai',
+    displayName: 'Min srolanh oun min ban',
+    artist: 'Chan samai'
+  },
+  {
+    name: 'Nek oun ban trem sromai - Soria Oung',
+    displayName: 'Nek oun ban trem sromai',
+    artist: 'Soria Oung'
+  },
+  {
+    name: 'Pel velea min sak som- Nam bunnarath',
+    displayName: 'Pel velea min sak som',
+    artist: 'Nam bunnarath'
+  },
+  {
+    name: 'Songsa leng leng- Nob panharith',
+    displayName: 'Songsa leng leng',
+    artist: 'Nob panharith'
+  },
+  {
+    name: 'Su Kleat - Vong DaraRotana',
+    displayName: 'Su Kleat',
+    artist: 'Vong DaraRotana'
+  },
 ];
 
 // Play
@@ -56,7 +106,7 @@ const loadSong = (song) => {
   title.textContent = song.displayName;
   artist.textContent = song.artist;
   music.src = `music/${song.name}.mp3`;
-  image.src = `img/${song.name}.jpg`;
+  image.src = `img/${song.name}.png`;
 };
 
 // Next Song

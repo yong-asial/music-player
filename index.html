@@ -7,16 +7,28 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="/manifest.json">
+    <script async src="https://cdn.jsdelivr.net/npm/pwacompat@2.0.7/pwacompat.min.js"></script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/service-worker.js').then(function (registration) {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          }).catch(function (err) {
+            console.log('ServiceWorker registration failed: ', err);
+          });
+        }
+      </script>
 </head>
 <body>
     <div class="player-container">
         <!-- Song -->
         <div class="img-container">
-            <img src="img/metric-1.jpg" alt="Album">
+            <img src="img/123 Don't Cry  - Pipo.png" alt="Album">
         </div>
-        <h2 class="title" id="title">Electric Chill Machine</h2>
-        <h3 class="artist" id="artist">Jacinto</h3>
-        <audio src="music/jacinto-1.mp3"></audio>
+        <h2 class="title" id="title">123 Don't Cry  - Pipo</h2>
+        <h3 class="artist" id="artist">Pipo</h3>
+        <audio src="music/123 Don't Cry  - Pipo"></audio>
         <!-- Progress -->
         <div class="progress-container" id="progress-container">
             <div class="progress" id="progress">

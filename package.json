@@ -1,0 +1,31 @@
+{
+  "name": "music-player",
+  "version": "1.0.0",
+  "description": "offline music player",
+  "main": "script.js",
+  "scripts": {
+    "build": "workbox injectManifest workbox-config.js",
+    "dev": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yong-asial/music-player.git"
+  },
+  "keywords": [
+    "offline",
+    "music",
+    "player",
+    "pwa",
+    "workbox"
+  ],
+  "author": "yong@asial.co.jp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yong-asial/music-player/issues"
+  },
+  "homepage": "https://github.com/yong-asial/music-player#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "workbox-cli": "^4.3.1"
+  }
+}
